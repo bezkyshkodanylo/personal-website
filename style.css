@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 850px;
+  margin: 20px auto;
+  background: white;
+  padding: 45px 40px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e8e8e8;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #6366f1;
+}
+
+/* кнопки для выбора языка */
+.language-switcher {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.lang-btn {
+  background-color: #f8f8f8;
+  border: 1px solid #dcdcdc;
+  color: #333;
+  padding: 7px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: border-color 0.15s;
+}
+
+.lang-btn:hover {
+  border-color: #6366f1;
+  background-color: #fafafa;
+}
+
+.lang-btn.active {
+  background-color: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* главное имя */
+h1 {
+  font-size: 2.4em;
+  color: #6366f1;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* контактная информация */
+.contact-info {
+  font-size: 0.95em;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.contact-info a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+/* разделы (About, Skills) */
+.section {
+  margin-bottom: 35px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+/* заголовки разделов */
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #6366f1;
+  font-weight: 600;
+}
+
+/* текст */
+p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.75;
+  margin-bottom: 15px;
+}
+
+/* контейнер для скиллов */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+/* скилл тег */
+.skill-tag {
+  background-color: #6366f1;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 18px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.skill-tag:hover {
+  background-color: #4f46e5;
+}
+
+/* контейнер для мов */
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* мовний елемент */
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #6366f1;
+  border-radius: 3px;
+  font-size: 0.95em;
+}
+
+.language-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.language-level {
+  background-color: #e0e7ff;
+  color: #6366f1;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+/* адаптивный дизайн */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 30px 20px;
+    border-radius: 4px;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .language-switcher {
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  .lang-btn {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.9em;
+  }
+
+  .skill-tag {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+
+  p {
+    font-size: 0.95em;
+    line-height: 1.7;
+  }
+}
